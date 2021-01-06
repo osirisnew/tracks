@@ -124,8 +124,9 @@ fi:
     none: Ei
     not_available_abbr: ei
     note:
-      one: ei muistiinpanoja
-      other: 1 muistiinpano
+      one: 1 muistiinpano
+      other: "%{count} muistiinpanoa"
+      zero: ei muistiinpanoja
     notes: Muistiinpanot
     numbered_step: Askel %{number}
     ok: Ok
@@ -178,13 +179,9 @@ fi:
     new_context_post: "' luodaan. Oletko varma?"
     new_context_pre: Uusi asiayhteys '
     no_contexts_: 'Ei asiayhteyksiä '
-    last_completed_in_context: "(last %{number})"
-    new_context_post: "' will be also created. Are you sure?"
-    new_context_pre: New context '
-    no_contexts_: 'No contexts '
-    no_contexts_active: Currently there are no active contexts
+    no_contexts_active: Aktiivisia asiayhteyksiä ei ole
     no_contexts_closed: Suljettuja asiayhteyksiä ei ole
-    no_contexts_hidden: Currently there are no hidden contexts
+    no_contexts_hidden: Piilotettuja asiayhteyksiä ei ole
     save_status_message: Asiayhteys tallennettu
     show_form: Luo uusi asiayhteys
     show_form_title: Lisää asiayhteys
@@ -271,11 +268,11 @@ fi:
         other: almost %{count} years
       half_a_minute: half a minute
       less_than_x_minutes:
-        one: less than 1 minute
-        other: less than a minute
+        one: less than a minute
+        other: less than %{count} minutes
       less_than_x_seconds:
         one: less than 1 second
-        other: less than 1 second
+        other: less than %{count} seconds
       over_x_years:
         one: over 1 year
         other: over %{count} years
@@ -1186,8 +1183,9 @@ fi:
       multi_page_html: Näytetään %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> yhteensä
         <b>%{count}</b> tietueesta
       single_page:
-        one: '%{model} ei löytynyt'
-        other: Näytetään 1 %{model}
+        one: Näytetään 1 %{model}
+        other: Näytetään kaikki %{count} %{model}
+        zero: '%{model} ei löytynyt'
       single_page_html:
         none: Näytetään <b>1</b> %{model}
         other: Näytetään <b>kaikki&nbsp;%{count}</b> %{model}
